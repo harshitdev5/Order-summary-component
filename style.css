@@ -1,0 +1,149 @@
+.title{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.container{
+    font-family: 'Lexend Peta', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Red Hat Display', sans-serif;
+}
+
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    background-image: url("./images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-color:hsl(225, 100%, 94%) ; 
+    background-size:contain;
+    position: relative; 
+    min-height: 100vh;
+}
+
+.container{
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%,-50%);
+   max-width: 450px;
+   background-color: white;
+   padding-bottom: 30px;
+   border-radius: 5%;
+   text-align: center;
+   overflow: hidden;
+   
+}
+
+.title{
+    margin: 30px
+}
+
+.subtitle{
+    margin-top: 20px;
+    margin-bottom: 40px; 
+    color: gray;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.plan-box{
+    background-color: hsl(225, 100%, 98%);
+    margin-left: 60px;
+    margin-right: 60px;
+    border-radius: 5%;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.plan-box-left{
+    display: flex;
+    gap: 15px;
+    }
+
+h5{
+    margin-top: 5px;
+}
+
+.plan-box-right{
+    margin-top: 10px;;
+}
+
+a.proceed-button{
+    display: block;
+    background-color: hsl(245, 75%, 52%);
+    padding: 10px;
+    color: white;
+    margin: 20px;
+    margin-left:60px;
+    margin-right:60px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 3s ease;
+   
+}
+a.proceed-button:hover{
+    background-color:hsl(224, 23%, 55%) ;
+}
+
+a.cancel-button{
+text-decoration: none;
+color: gray;
+font-weight: bold;
+}
+
+p{
+    color: gray;
+}
+
+h5{
+    font-weight: bold;
+    font-size:16px;
+}
+
+@media (max-width:375px){
+
+body {
+    background-image: url("./images/pattern-background-mobile.svg");
+    font-size:14px;
+}
+
+.container{
+    max-width: 85%;
+}
+
+.title{
+    font-size: 23px;
+}
+
+div .plan-box{
+    padding: 12px;
+}
+
+.plan-box-left div {
+    margin-left: 10px;;
+}
+a.proceed-button , a.cancel-button , .plan-box a{
+    font-size: 13px;
+}
+.text-content{
+    padding: 9% 7%;
+}
+}
+
+   
+
+
+
+
+
+
+

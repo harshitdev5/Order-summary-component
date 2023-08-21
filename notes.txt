@@ -1,0 +1,96 @@
+- box-sizing: border-box;   {height and width assign will be fixed for border padding margin etc.}
+              content-box;  {height and width assing will be for the content only}
+
+
+- background image is assign only in the body tag 
+- some omportsnt css properties related to background are as follows:- 
+   1. background-image
+   2. background-size  {cover,contain, manual, auto }
+   3. background-repeat {no-repeat, repeat-x, repeat-y, repeat}
+   4. background-color
+
+- tranform property of css can allow to move div in whatever way we want. some examples are given below:-
+   
+  1. transform : rotate(45deg)
+
+
+
+
+
+- if you wish to add transition  then use hover command :- 
+  1.  .container{
+    transition: all 1s ease-in-out;
+       }     
+  2.  .container:hover{
+    transform: rotate(720deg);
+       }
+
+ similarly, 
+
+ 1.  .container{
+    transition: all 1s ease-in-out;
+       }     
+  2.  .container:hover{
+    transform: skew(20deg);
+       }
+
+ similarly, 
+
+  1.  .container{
+    transition: all 1s ease-in-out;
+       }     
+  2.  .container:hover{
+    transform: scale(2);
+       }
+
+
+ similarly, 
+
+  1.  .container{
+    transition: all 1s ease-in-out;
+       }     
+  2.  .container:hover{
+    transform: translateX(50px);
+       }
+
+
+similarly, 
+
+  1.  .container{
+    transition: all 1s ease-in-out;
+       }     
+  2.  .container:hover{
+    transform: translateY(50px);
+       }
+
+
+ similarly, 
+
+  1.  .container{
+    transition: all 1s ease-in-out;
+       }     
+  2.  .container:hover{
+    transform: translate(50px,50px);
+       }
+
+
+For the container to be center aligned without using flexbox:-
+
+ body {
+    min height: 100vh;
+    position: relative;
+ }
+
+ .container{
+    display: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%)
+    
+ }
+
+
+
+- overflow: hidden     (can be used when the image is overflowing from the container)
+
+-  filter: drop-shadow(5px 5px 10px black);
